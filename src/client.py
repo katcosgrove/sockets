@@ -1,6 +1,7 @@
 import socket
 import sys
 
+
 infos = socket.getaddrinfo('127.0.0.1', 3000)
 
 stream_info = [i for i in infos if i[1] == socket.SOCK_STREAM][0]
